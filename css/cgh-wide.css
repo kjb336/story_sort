@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "UTF-8";
+
+/* =================================================
+LOCAL STYLE SHEET FOR STYLES USED THROUGHOUT CGH
+================================================= */
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* oooooooooooooooooooo ANONYMOUS FEEDBACK BOX oooooooooooo */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+div#feedbackbox {
+    border-color: #CEE7C2 #71B84E #5A983D #ACD698;
+    border-style: solid;
+    border-width: 1px;
+    clear: both;
+    float: none;
+    margin: 0 8px 10px 0;
+}
+
+div#feedbackbox a {
+	border: 1px solid  #F8F8F8;
+	background: #2F9100 url(/globalhealth/images/feedbackbox1.jpg) 0 0 repeat-x;
+	margin: 0;
+	display: block;
+	padding: 10px 7px;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFF99;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size: 1.1em;
+	}
+
+div#feedbackbox a em {
+	font-style: normal;
+	color: #98C94D;
+	}
+
+div#feedbackbox a:hover {
+	background: #3A970D url(/globalhealth/images/feedbackbox2.jpg) 0 0 repeat-x;
+	color: #BCDEAD;
+	text-decoration: none;
+	}
+
+div#feedbackbox a:hover em {
+	color: #76B857;
+	}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* oooooooooooooooooooo SUBTITLE oooooooooooo */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+p.subtitle {
+	margin: -10px 0 0 0;
+	padding: 0 0 20px 0;
+	color: #81799E;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+
+h1 span.subtitle {
+	margin: 0 0 0 0;
+	padding: 0 0 30px 0;
+	font-size: .7em;
+	color: #81799E;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* oooooooooooooooooooo LINK DATES ("NEW/UPDATED") oooooooooooo */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.newupdated {
+	color: #F00;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+a:hover .newupdated {
+	color: #FF6666;
+	text-decoration: none;
+}
+
+h3 span.newupdated {
+	font-size: 12px;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* oooooooooooooooooooo FORMATTED TABLES oooooooooooo */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+table.table {
+	border: #6E658F;
+	border-bottom: 2px solid #6E658F;
+	/*border-bottom: 2px solid #000;*/
+}
+
+#content table.table caption h2 {
+	font-size: 1em;
+}
+
+table.table th {
+	background: #DCD8ED url(/globalhealth/images/table_th.jpg) repeat-x bottom;
+	color: #332958;
+	border: solid 1px #BBB7CB;
+    vertical-align: top;
+	padding: 3px;
+}
+
+table.table td {
+    vertical-align: top;
+	border: solid 1px #BBB7CB;
+	padding: 3px;
+}
+
+.tablesmalltext {
+	font-size: .9em;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* oooooooooooooooooooo INTERNAL EDITING AND PROOFING oooooooooooo */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.editing-highlight {
+	background: #FF0;
+	color: red;
+}
+
+.editing-strikethrough {
+	text-decoration: line-through;
+}
+
+.editing-complete {
+	background: #999;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* oooooooooooooooooooo VIDEO PAGES oooooooooooo */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.videopage.rounders.grey {
+	width: 512px;
+}
+
+a.youtubelink {
+	background: url(/globalhealth/images/youtube_logo.gif) no-repeat;
+	padding: 2px 0 5px 60px;
+}
+
+.homepagevid {
+	background-color:#f3f3f3;
+	margin:0;
+	/*margin:0.5em 0 14px;*/
+	border:1px solid #cecece;
+	/*padding:4px;*/
+	padding: 2px;
+	text-align: center;
+}
+
+.subc .homepagevid a img.center {
+	border:1px solid;
+	padding: 0;
+}
+
+.subc .homepagevid a:hover img.center {
+	border:1px solid #666;
+}
+
+.homepagevid p {
+	text-align: center;
+}
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* oooooooooooooooooooo SIDE-BY-SIDE MODULES (2 columns) oooooooooooo */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.sidebyside {
+	padding: 0;
+}
+
+.sidebyside .twoColumn {
+	padding: 0;
+}
+
+.sidebyside .twoColumn .c50l .module {
+	padding-right: 3px;
+}
+
+.sidebyside .twoColumn .c50r .module {
+	padding-left: 3px;
+}
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* oooooooooooooooooooo MISCELLANEOUS oooooooooooo */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+#content a.external.noexternalicon .externalImg {
+	display: none;
+}
+
+div.pageOptions-horizontal ul li.twitter a {
+	background: url(/TemplatePackage/images/twitter.png) no-repeat center top;
+}
+
+
+
+div.pageOptions ul.services li.videos a { 
+    background: url(/globalhealth/images/video_sm.jpg) 0 center no-repeat;
+}
+
+div.pageOptions-horizontal ul li.videos a {
+    background: url(/globalhealth/images/video_sm.jpg) 0 center no-repeat;
+}
+	
+	
+	/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* oooooooooooooooooooo Video Icon in right rail oooooooooooo */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+/*======= Social Media Module styles =======*/
+.socialMedia { background-color:transparent; }
+/*#socialMedia { background-color:#fff; margin:0 10px; border-top:1px dotted #000; padding-top:2em;
+}*/
+#socialMedia h4, footer h4 { font-family:Arial, Helvetica, sans-serif;/* font-size:1.8em;*/ font-weight:normal; }
+.socialMedia #socialMedia div h4 { margin-bottom:2px; line-height:30px; }
+
+#footer-container footer h4 { font-size:1.8em; font-weight:400; }
+
+#tweet, #facebook { background-color:#fff; color:#000; float:left; margin-left:-10px; padding:0 3%;/* 6px / 200px */ width:90.9090909%;/*200px / 220px */ }
+#facebook { margin-left:20px; margin-right:-10px; }
+.socl-avatar { float:left; display:none; }
+.socl-user { background-color:#e3edf6; display:block; line-height:20px; margin-bottom:10px; text-decoration:none; text-indent:3px; }
+
+#tweet h4 { background:transparent url(/homepage/images/icons/icon_lg-twitter.png) 0 0 no-repeat; }
+#facebook h4 { background:transparent url(/homepage/images/icons/icon_lg-facebook.png) -12px 0 no-repeat; }
+
+#tweet h4 a { color:#000; display:block; padding:0px 0px 15px 0px; }
+#facebook h4 a { color:#000; display:block; }
+
+aside .socialMedia { background:transparent; border:1px solid #ddd; padding:0; }
+aside .socialMedia #socialMedia { background-color:#ebf2f9; margin:0 auto; border:3px solid #fff; padding:0; }
+aside .socialMedia #socialMedia div:last-child { margin-bottom:0 !important; }
+aside .socialMedia #socialMedia #tweet, aside .socialMedia #socialMedia #facebook { background-color:#ebf2f9; display:inline-block; float:none; margin:0 auto 2em; width:94%; }
+aside #tweet h4 a, aside #facebook h4 a { font-size:1.5em; padding-left:12.5%; }
+aside #tweet h4 a { padding-left:35px;/* padding-left:17.5%;*/ }
+aside .socialMedia #socialMedia #tweet .socl-loader-graphic, aside .socialMedia #socialMedia #facebook .socl-loader-graphic { background:url(/homepage/images/social_media_loader.gif) 50% 50% no-repeat; display:block; width:100%; height:30px; margin:5px auto; }
+aside .socialMedia #socialMedia #tweet .socl-user, aside .socialMedia #socialMedia #facebook .socl-user { background-color:#d1e2f0; }
+aside #tweet .socl-comment-text p, 
+aside #facebook .socl-comment-text p,
+aside #tweet .socl-comment-text a.failover,
+aside #facebook .socl-comment-text a.failover { display: none; }
+

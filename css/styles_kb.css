@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Tutorial CSS */
+#demo-list {height: 700px;}
+#demo-list {margin-bottom: 50px; line-height: 1.5em;}
+#demo-list li {display: inline;}
+#demo-list li a {display: block; float: left; width: 135px; height: 60px; margin: 0 2px 2px 0; padding: 10px; background: url(../images/bg_link.png) no-repeat 0 0; font: bold 12px Arial, sans-serif; text-align: center; color: #000; text-transform: capitalize;}
+#demo-list li a:hover {background-position:0 -80px; color: #000;}
+#tag-list {margin-bottom: 20px; width: 100%; overflow: hidden; padding: 20px 0 0;}
+#tag-list li {display: inline;}
+#tag-list li a {text-transform: capitalize; display: block; float: left; padding: 2px 2px; margin-right: 8px; font-family: Arial; font-weight: bold; border-bottom: 2px solid #fff;}
+#tag-list li a:hover {color: #000; background: none;}
+#tag-list li a.active {color: #000; border-bottom: 2px solid #000;}

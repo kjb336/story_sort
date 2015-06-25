@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="web design, website development, web application development, print design, database development, ecommerce websites, search engine optimization, packaging design" />
+<meta name="description" content="Tutorial demo showing how to add jquery animated validation to any form" />
+<meta name="robots" content="all" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/styles_kb.css" />
+<link rel="stylesheet" href="css/bootstrap24.css" />
+<link rel="stylesheet" href="css/theme-purple.css" />
+<link rel="stylesheet" href="css/cgh-wide.css" />
+<link rel="stylesheet" href="css/local.css" />
+<link rel="stylesheet" href="css/localrd.css" />
+<title>jQuery Tutorial Demo - Create An Automatic Content Filter Using CSS Classes</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<script type="text/JavaScript">
+$(document).ready(function() {
+
+	// map the classes for each item into a new array
+	classes = $("#demo-list li span:first-child").map(function(){
+		return $(this).attr("class").split(' ');
+    });
+	
+	// create list of distinct items only
+	var classList = distinctList(classes);
+	
+	// generate the list of filter links
+	var tagList = '<ul id="tag-list"></ul>';
+	tagItem = '<li><a href="#" class="active">all</a></li>';
+	$.each(classList, function(index,value){
+		var value = value.replace("-", " ");
+		tagItem += '<li><a href="#">'+value+'</a></li>';
+	});
+	
+	// add the filter links before the list of items
+	$("#demo-list").before($(tagList).append(tagItem));
+	
+	// filter the demo list when the filter links are clicked
+	$('#tag-list li a').live('click',function(e){
+
+		var getText = $(this).text().replace(" ", "-");
+		if(getText == 'all'){
+			$("#demo-list li span:first-child").show();
+		} else {
+			$("#demo-list li span:first-child").hide();
+			$("#demo-list li span:first-child."+getText).show();
+		}
+		
+		// add class "active" to current filter item
+		$('#tag-list li a').removeClass('active');
+		$(this).addClass('active');
+		
+		// prevent the page scrolling to the top of the screen
+		e.preventDefault();
+		
+	});		
+});
+// Function to create a distinct list from array
+function distinctList(inputArray){
+	var i;
+	var length = inputArray.length;
+	var outputArray = [];
+	var temp = {};
+	for (i = 0; i < length; i++) {
+		temp[inputArray[i]] = 0;
+    }
+    for (i in temp) {
+        outputArray.push(i);
+	}
+	return outputArray;
+}
+</script>
+
+</head>
+<body><div id="wrapper">
+<div class="container">
+  <div id="content">
+    <div class="row">
+      <div class="span19 pagetitle">
+        
+            <h1>Stories of CDC's Work Around the World</h1>
+        
+      </div>
+      <!-- body -->
+      <div id="body" class="span19">
+        <div id="contentArea">
+<div class="wrap">
+  <h2 class="text-center">jQuery Demo: Create An Automatic Content Filter Using CSS Classes</h2>
+	<ul id="demo-list">
+
+	    <li>     <!--STORY GROUP BEGINS-->
+        
+          
+             <span class="sally"> <div class="module-typeB">
+                <h6><a href="http://www.cdc.gov/globalhealth/stories/uganda_disease_detection.htm" >Uganda FETP Gets Crash Course in Disease Detection</a></h6>
+                <div class="lefty"><a href="http://www.cdc.gov/globalhealth/stories/uganda_disease_detection.htm" id="anch_102"><img alt="" src="http://www.cdc.gov/globalhealth/stories/images/uganda_disease_detection_thmb.jpg"></a></div>
+                <p>On February 6, 2015, the Uganda Ministry of Health (MOH) received word of a “strange disease” that had killed one person, sickened dozens...<br>
+                  <span class="storydate">Posted June 15, 2015</span></p>
+              </div></span>
+           
+            <!--STORY GROUP ENDS-->
+</li>
+
+  <li>     <!--STORY GROUP BEGINS-->
+        
+          
+         <span class="sara">     <div class="module-typeB">
+                <h6><a href="http://www.cdc.gov/globalhealth/stories/uganda_disease_detection.htm" >Uganda FETP Gets Crash Course in Disease Detection</a></h6>
+                <div class="lefty"><a href="http://www.cdc.gov/globalhealth/stories/uganda_disease_detection.htm" id="anch_102"><img alt="" src="http://www.cdc.gov/globalhealth/stories/images/uganda_disease_detection_thmb.jpg"></a></div>
+                <p>On February 6, 2015, the Uganda Ministry of Health (MOH) received word of a “strange disease” that had killed one person, sickened dozens...<br>
+                  <span class="storydate">Posted June 15, 2015</span></p>
+              </div></span>
+           
+            <!--STORY GROUP ENDS-->
+</li>
+
+  <li>     <!--STORY GROUP BEGINS-->
+        
+          
+       <span  class="kristin">      <div class="module-typeB">
+                <h6><a href="http://www.cdc.gov/globalhealth/stories/uganda_disease_detection.htm">Uganda FETP Gets Crash Course in Disease Detection</a></h6>
+                <div class="lefty"><a href="http://www.cdc.gov/globalhealth/stories/uganda_disease_detection.htm" id="anch_102"><img alt="" src="http://www.cdc.gov/globalhealth/stories/images/uganda_disease_detection_thmb.jpg"></a></div>
+                <p>On February 6, 2015, the Uganda Ministry of Health (MOH) received word of a “strange disease” that had killed one person, sickened dozens...<br>
+                  <span class="storydate">Posted June 15, 2015</span></p>
+              </div>
+           </span>
+            <!--STORY GROUP ENDS-->
+</li>
+
+  <li>     <!--STORY GROUP BEGINS-->
+        
+          <span class="sally nathan laura" >
+              <div class="module-typeB">
+                <h6><a href="http://www.cdc.gov/globalhealth/stories/uganda_disease_detection.htm" >Uganda FETP Gets Crash Course in Disease Detection</a></h6>
+                <div class="lefty"><a href="http://www.cdc.gov/globalhealth/stories/uganda_disease_detection.htm" id="anch_102"><img alt="" src="http://www.cdc.gov/globalhealth/stories/images/uganda_disease_detection_thmb.jpg"></a></div>
+                <p>On February 6, 2015, the Uganda Ministry of Health (MOH) received word of a “strange disease” that had killed one person, sickened dozens...<br>
+                  <span class="storydate">Posted June 15, 2015</span></p>
+              </div>
+           
+            <!--STORY GROUP ENDS-->
+</li>
+
+  <li>     <!--STORY GROUP BEGINS-->
+        
+          <span class="menus laura kristin">
+              <div class="module-typeB">
+                <h6><a href="http://www.cdc.gov/globalhealth/stories/uganda_disease_detection.htm" >Uganda FETP Gets Crash Course in Disease Detection</a></h6>
+                <div class="lefty"><a href="http://www.cdc.gov/globalhealth/stories/uganda_disease_detection.htm" id="anch_102"><img alt="" src="http://www.cdc.gov/globalhealth/stories/images/uganda_disease_detection_thmb.jpg"></a></div>
+                <p>On February 6, 2015, the Uganda Ministry of Health (MOH) received word of a “strange disease” that had killed one person, sickened dozens...<br>
+                  <span class="storydate">Posted June 15, 2015</span></p>
+              </div></span>
+           
+            <!--STORY GROUP ENDS-->
+</li>
+		</ul>
+		
+	  </div>
+      </div>
+      </div>
+      </div></div></div></div>
+</body>
+</html>
